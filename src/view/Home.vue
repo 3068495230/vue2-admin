@@ -1,15 +1,11 @@
 <template>
-  <div class="root">
-      首页
-  </div>
+  <div class="root">首页</div>
 </template>
 
 <script>
 export default {
-    name: 'home'
-}
+  name: "home",
+};
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
