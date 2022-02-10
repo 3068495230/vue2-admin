@@ -1,8 +1,13 @@
 {
+    "name": "{{ name }}",
+    "version": "1.0.0",
+    "description": "{{ description }}",
+    "main": "index.js",
     "scripts": {
         "serve": "webpack serve --mode=development",
         "build": "webpack --mode=production"
     },
+    "author": "{{ author }}",
     "dependencies": {
         "axios": "^0.25.0",
         "css-loader": "^6.5.1",
