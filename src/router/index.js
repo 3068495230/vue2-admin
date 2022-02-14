@@ -10,20 +10,22 @@ Vue.use(VueRouter);
 const router = new VueRouter({
   routes: [
     {
+      // 根路径，也就是默认显示页面
       path: "/",
-      redirect: {
-        name: "home",
-      },
+      // 重定向
+      redirect: "/helloWorld",
+      // 显示组件
+      component: () => import("../component/HelloWorld.vue"),
     },
     {
-      path: "/home",
-      name: "home",
-      component: () => import("../view/Home.vue"),
+      path: "/helloWorld",
+      name: "helloWorld",
+      component: () => import("../component/HelloWorld.vue"),
     },
     {
       path: "/about",
       name: "about",
-      component: () => import("../view/About.vue"),
+      component: () => import("../component/About.vue"),
     },
   ],
 });

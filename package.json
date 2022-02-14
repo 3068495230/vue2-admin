@@ -4,17 +4,24 @@
     "description": "{{ description }}",
     "main": "index.js",
     "scripts": {
-        "serve": "webpack serve --mode=development",
-        "build": "webpack --mode=production"
+        "dev": "webpack serve --mode=development",
+        "build": "webpack --mode=production",
+        "server": "json-server --watch ./src/api/data.js --port 1744"
     },
     "author": "{{ author }}",
     "dependencies": {
         "axios": "^0.25.0",
         "css-loader": "^6.5.1",
         "element-ui": "^2.15.6",
+        "file-loader": "^6.2.0",
+        "html-loader": "^3.1.0",
+        "json-server": "^0.17.0",
         "less": "^4.1.2",
         "less-loader": "^10.2.0",
+        "mockjs": "^1.1.0",
+        "node-sass": "^4.14.1",
         "style-loader": "^3.3.1",
+        "url-loader": "^4.1.1",
         "vue": "^2.6.14",
         "vue-loader": "^15.9.8",
         "vue-router": "^3.5.3",
@@ -24,6 +31,7 @@
         "webpack-cli": "^4.9.1"
     },
     "devDependencies": {
+        "sass-loader": "^7.3.1",
         "webpack-dev-server": "^4.7.3"
     }
 }
